@@ -29,12 +29,42 @@ body {
   justify-content: center;
 }
 
+.container {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .sidebar {
+  flex-direction: column;
+  display: flex;
   width: 300px;
   background: rgb(165, 169, 182);
+  flex-shrink: 0;
+  padding: 32px;
+}
+
+#portrait {
+  height:250px; 
+  border-radius: 50%; 
+  border: 10px solid #505050;
+}
+
+.description {
+  align-items: center;
+
+  background-color: white;
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 4px;
+
+  padding: 16px;
+  margin: 16px;
+  width: 250px;
 }
 
 .card {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: white;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
@@ -47,6 +77,8 @@ body {
 
 .card:hover {
   transform: scale(1.10);
+  box-shadow: 2px 4px 16px 6px rgba(0,0,0,.06);
+  transition: 0.3s;
 }
 
 .body {
@@ -54,9 +86,8 @@ body {
   display: flex;
 }
 
-.sidebar {
-  flex-shrink: 0;
-  padding: 16px;
+.changeFont {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 ul {
@@ -79,18 +110,39 @@ a.hover {
   color: blue;
 }
 
-.container {
-  padding: 32px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .classTitle {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   display: flex;
   background-color: rgb(219, 225, 243);
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
   padding: 16px;
   margin: 16px;
   width: 500px;
+}
+
+.frame {
+  padding: 32px;
+  display: flex;
+}
+
+.button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: smaller;
+  margin: auto;
+  border-radius: 5px;
+  color: white;
+  background-color: #0F5897;
+  padding: 5px 10px 8px 10px;
+}
+
+.button:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes background-color {
+  100% {
+    background-color: #4791d0;
+  }
 }
