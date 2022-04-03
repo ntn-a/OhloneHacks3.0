@@ -1,18 +1,4 @@
-const testScores = {
-    "bob": 50,
-    "john": 10,
-    "joe": 90
-};
-
-const classes = ["⭐️", "🦸🏽‍️", "🖌️", "👌🏽"]
-
-function getStudentScore(student) {
-    return testScores[student];
-}
-
-function setStudentScore(student, score) {
-    testScores[student] = score;
-}
+const classes = ["⭐", "🦸🏽‍️", "🖌️", "👌🏽"];
 
 function openNav() {
     document.getElementById("menu").style.width = "144px"
