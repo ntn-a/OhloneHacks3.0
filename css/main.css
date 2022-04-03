@@ -121,12 +121,21 @@ a.hover {
   width: 500px;
 }
 
+.classTitle:hover {
+  animation-name: ease-out;
+  color: blue;
+  transform:scale(1.05);
+}
+
 .frame {
   padding: 32px;
   display: flex;
 }
 
 .button {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: smaller;
   margin: auto;
